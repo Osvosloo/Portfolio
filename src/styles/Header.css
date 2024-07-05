@@ -79,7 +79,7 @@
     flex-direction: column;
     position: absolute;
     top: calc(100% + 65%);
-    transform: translateX(-27%);
+    transform: translateX(-55%);
     width: calc(100vw - 40px);
     max-width: 150px;
     background-color: rgba(255, 255, 255, 0.9);
