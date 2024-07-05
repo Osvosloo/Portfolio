@@ -43,7 +43,6 @@
   transition: color 0.3s ease;
 }
 
-/* Responsive Menu */
 .menu-toggle {
   display: flex;
   align-items: center;
@@ -77,8 +76,8 @@
     display: none;
     flex-direction: column;
     position: absolute;
-    top: calc(100% + 65%);
-    transform: translateX(-44%);
+    top: calc(100% + 35%);
+    transform: translateX(-43%);
     width: calc(100vw - 40px);
     max-width: 150px;
     background-color: rgba(255, 255, 255, 0.9);
