@@ -4,14 +4,14 @@ import "../styles/Projects.css"; // Update the path if needed
 const projects = [
   {
     id: 1,
-    title: "This website",
+    title: "This Website",
     symbol: "💻",
     description: "Web Design and Architecture.",
     link: "https://example.com/project1",
   },
   {
     id: 2,
-    title: "Game development",
+    title: "Game Development",
     symbol: "🎮",
     description: "A multiplayer card game.",
     link: "https://example.com/project2",
@@ -37,7 +37,6 @@ const projects = [
     description: "Machinery health reporting automation with SCADA.",
     link: "https://example.com/project5",
   },
-  // Add more projects as needed
 ];
 
 function Projects() {

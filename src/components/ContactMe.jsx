@@ -16,17 +16,15 @@ const ContactMe = () => {
         <h2>Get in Touch</h2>
         <div className="contact-options">
           <div className="contact-option">
-            <i className="fas fa-envelope"></i>
-            <p>
-              <FontAwesomeIcon icon={faEnvelope} /> Email:{" "}
-              <a href="email:osvosloo2@gmail.com">osvosloo2@gmail.com </a>
-            </p>
-          </div>
-          <div className="contact-option">
             <i className="fas fa-phone"></i>
             <p>
-              <FontAwesomeIcon icon={faPhone} /> Phone:{" "}
+              <FontAwesomeIcon icon={faPhone} />{" "}
               <a href="tel:+27720123935">(+27) 72 012 3935</a>
+            </p>
+            <i className="fas fa-envelope"></i>
+            <p>
+              <FontAwesomeIcon icon={faEnvelope} />{" "}
+              <a href="email:osvosloo2@gmail.com">osvosloo2@gmail.com </a>
             </p>
           </div>
         </div>

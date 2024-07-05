@@ -1,30 +1,22 @@
-.contact-section {
-  padding: 10px 0; /* Adjust spacing as needed */
-  background-color: #f9f9f9; /* Example background color */
-  text-align: center;
+.contact-me {
+  border-radius: 5px;
 }
 
 .contact-content {
-  max-width: 800px;
   margin: 0 auto;
+  max-width: 1200px;
 }
 
 .contact-content h2 {
   font-size: 2.5rem;
-  margin-bottom: 10px;
-  color: #333; /* Example text color */
-}
-
-.contact-content p {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-  color: #555; /* Example text color */
+  margin-bottom: 5px;
+  color: #333;
 }
 
 .contact-options {
   display: flex;
   justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .contact-option {
@@ -34,23 +26,23 @@
 
 .contact-option i {
   font-size: 3rem;
-  color: #2ea44f; /* Example icon color */
+  color: #2ea44f;
   margin-bottom: 10px;
 }
 
 .contact-option p {
   font-size: 1.1rem;
-  color: #666; /* Example text color */
+  color: #666;
 }
 
 .contact-option a {
-  color: #2ea44f; /* Example link color */
+  color: #2ea44f;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .contact-option a:hover {
-  color: #228b3d; /* Darker green on hover */
+  color: #228b3d;
 }
 
 .contact-form {
@@ -83,8 +75,8 @@ textarea {
 }
 
 .submit-button {
-  background-color: #2ea44f; /* Example button color */
-  color: #fff; /* Example text color */
+  background-color: #2ea44f;
+  color: #fff;
   border: none;
   padding: 12px 20px;
   font-size: 1rem;
@@ -94,5 +86,5 @@ textarea {
 }
 
 .submit-button:hover {
-  background-color: #228b3d; /* Darker green on hover */
+  background-color: #228b3d;
 }
