@@ -1,0 +1,132 @@
+/* Header styles */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  border-bottom: 1px solid black;
+}
+
+.greeting {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333333;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin-left: 20px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333333;
+  transition: color 0.3s ease;
+}
+
+/* Responsive Menu */
+.menu-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.close-icon,
+.burger-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* Display toggle button for small screens */
+  }
+
+  .nav {
+    flex-direction: column;
+    position: relative;
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: calc(100% + 65%);
+    transform: translateX(-27%);
+    width: calc(100vw - 40px);
+    max-width: 150px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    border-radius: 5px;
+  }
+
+  .nav-list.active {
+    display: flex;
+  }
+
+  .nav-item {
+    text-align: center; /* Center align text */
+    margin: 2px 0; /* Add vertical spacing between items */
+  }
+
+  .nav-item a {
+    display: block;
+    padding: 15px 20px; /* Add padding for touch area */
+    color: #333333;
+    transition: background-color 0.3s ease;
+  }
+
+  .nav-item a:hover {
+    background-color: #f2f2f2; /* Light gray background on hover */
+  }
+}
+
+@media (min-width: 769px) {
+  .menu-toggle {
+    display: none; /* Hide toggle button for larger screens */
+  }
+
+  .nav {
+    flex-direction: row; /* Display items next to each other */
+  }
+
+  .nav-list {
+    display: flex; /* Display nav items in a row */
+  }
+
+  .nav-item {
+    margin-left: 20px; /* Restore left margin for spacing */
+  }
+
+  .nav-item a {
+    padding: 10px 15px; /* Adjust padding for larger screens */
+  }
+}
