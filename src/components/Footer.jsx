@@ -8,20 +8,19 @@ const Footer = () => {
       <p>&copy; 2024 Vossie. </p>
       <div className="social-icons">
         <a
-          href="https://twitter.com/YourCompany"
+          href="https://twitter.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FontAwesomeIcon icon={faXTwitter} />
         </a>
         <a
-          href="https://linkedin.com/company/YourCompany"
+          href="https://linkedin.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FontAwesomeIcon icon={faLinkedin} />
         </a>
-        {/* Add more social media icons as needed */}
       </div>
     </footer>
   );

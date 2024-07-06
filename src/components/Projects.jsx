@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Projects.css"; // Update the path if needed
+import "../styles/Projects.css";
 
 const projects = [
   {
@@ -22,20 +22,6 @@ const projects = [
     symbol: "📊",
     description: "Machinery health reporting automation with SCADA.",
     link: "https://example.com/project3",
-  },
-  {
-    id: 4,
-    title: "Big Data",
-    symbol: "📊",
-    description: "Machinery health reporting automation with SCADA.",
-    link: "https://example.com/project4",
-  },
-  {
-    id: 5,
-    title: "Big Data",
-    symbol: "📊",
-    description: "Machinery health reporting automation with SCADA.",
-    link: "https://example.com/project5",
   },
 ];
 
