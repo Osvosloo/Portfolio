@@ -1,13 +1,32 @@
-import React, { useState } from "react";
-import ".././styles/ContactMe.css"; // Ensure correct path to CSS file
+import React, { useRef } from "react";
+import ".././styles/ContactMe.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import emailjs from "@emailjs/browser";
 
 const ContactMe = () => {
+  const form = useRef();
+  const emailServiceID = import.meta.env.VITE_EMAIL_SERVICE;
+  const emailTemplateID = import.meta.env.VITE_EMAIL_TEMPLATE;
+  const emailPublicKey = import.meta.env.VITE_EMAIL_PUBLIC_KEY;
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Handle form submission logic here
-    alert("Form submitted!"); // Example alert
+    emailjs
+      .sendForm(emailServiceID, emailTemplateID, form.current, {
+        publicKey: emailPublicKey,
+      })
+      .then(
+        () => {
+          console.log(
+            `SUCCESS! + ${(emailServiceID, emailTemplateID, emailPublicKey)}`
+          );
+          alert("Form submitted!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+          alert("Form submition failed!");
+        }
+      );
   };
 
   return (
@@ -28,14 +47,14 @@ const ContactMe = () => {
             </p>
           </div>
         </div>
-        <form onSubmit={handleSubmit} className="contact-form">
+        <form ref={form} onSubmit={handleSubmit} className="contact-form">
           <div className="form-group">
             <label htmlFor="name">Name:</label>
-            <input type="text" id="name" name="name" required />
+            <input type="text" id="name" name="from_name" required />
           </div>
           <div className="form-group">
             <label htmlFor="email">Email:</label>
-            <input type="email" id="email" name="email" required />
+            <input type="email" id="email" name="from_email" required />
           </div>
           <div className="form-group">
             <label htmlFor="message">Message:</label>
