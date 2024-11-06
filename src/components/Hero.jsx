@@ -8,10 +8,13 @@ function Hero() {
     <section className="hero">
       <div className="hero-text">
         <h1>I&apos;m Stephan, but you can call me Vossie!</h1>
-        <p></p>
+        <p>
+          I&apos;m a builder. I like tinkering with websites, games and building
+          apps that make life a little easier.
+        </p>
         <button className="hero-button">
           <Link to="contact-me" smooth={true} duration={400}>
-            Contact Me
+            Let&apos;s chat
           </Link>{" "}
         </button>
       </div>

@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import ".././styles/ContactMe.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -32,7 +32,7 @@ const ContactMe = () => {
   return (
     <section className="contact-me">
       <div className="contact-content">
-        <h2>Get in Touch</h2>
+        <h2>Let&apos;s chat</h2>
         <div className="contact-options">
           <div className="contact-option">
             <i className="fas fa-phone"></i>
@@ -61,7 +61,7 @@ const ContactMe = () => {
             <textarea id="message" name="message" rows="4" required></textarea>
           </div>
           <button type="submit" className="submit-button">
-            Submit
+            Send
           </button>
         </form>
       </div>

@@ -1,14 +1,13 @@
-import React from "react";
 import "../styles/Projects.css";
 
 const projects = [
-  {
-    id: 1,
-    title: "This Website",
-    symbol: "💻",
-    description: "Web Design and Architecture.",
-    link: "https://example.com/project1",
-  },
+  // {
+  //   id: 1,
+  //   title: "This Website",
+  //   symbol: "💻",
+  //   description: "Web Design and Architecture.",
+  //   link: "https://example.com/project1",
+  // },
   {
     id: 2,
     title: "Game Development",
@@ -22,6 +21,14 @@ const projects = [
     symbol: "📊",
     description: "Machinery health reporting automation with SCADA.",
     link: "https://example.com/project3",
+  },
+  {
+    id: 4,
+    title: "Goal Tracking App",
+    symbol: "🎯",
+    description:
+      "An app for managing daily goals with progress tracking and AI consistency review.",
+    link: "https://example.com/goal-tracking-app",
   },
 ];
 
