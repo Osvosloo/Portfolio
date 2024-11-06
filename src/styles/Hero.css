@@ -20,7 +20,7 @@ html {
 
 .hero-text {
   flex: 1;
-  max-width: 50%;
+  max-width: 100%;
 }
 
 .hero-text h1 {
