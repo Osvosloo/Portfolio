@@ -1,6 +1,3 @@
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
-import "../styles/Projects.css";
-
 const projects = [
   {
     id: 2,
@@ -41,24 +38,4 @@ const projects = [
   },
 ];
 
-function Projects() {
-  return (
-    <div className="projects">
-      <h2>Projects</h2>
-      <div className="project-cards">
-        {projects.map((project) => (
-          <div className="project-card" key={project.id}>
-            <div className="project-icon">{project.symbol}</div>
-            <div className="project-content">
-              <h3>{project.title}</h3>
-              <p>{project.description}</p>
-              <Link to={`/project/${project.id}`}>Learn More</Link>{" "}
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}
-
-export default Projects;
+export default projects; // Ensure you are exporting the array

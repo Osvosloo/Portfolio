@@ -13,7 +13,7 @@ html {
   justify-content: space-between;
   background-color: #f9f9f9;
   width: 100%;
-  padding: 40px 20px; /* Adjust padding as needed */
+  padding: 20px;
   border-radius: 5px;
   flex: auto;
 }
